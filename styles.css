@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#timeline-container {
+  position: relative;
+  width: calc(100% - 40px);
+  /* reduces width to allow for full visibility of month labels */
+  margin: 0 20px;
+  /* adds margin to the sides */
+  height: 50px;
+}
+
+#timeline {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: black;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  /* creates the arrow shape */
+  border-right: 5px solid transparent;
+  border-top: 10px solid red;
+  /* adjust size as needed */
+  top: 0;
+  /* positions at the top of the container */
+  cursor: pointer;
+}
+
+.arrow.today {
+  border-top-color: green;
+  /* different color for 'today' */
+}
+
+.increment {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 15px;
+  background: black;
+  text-align: center;
+}
+
+.increment span {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.date-increment {
+  height: 7px;
+}
