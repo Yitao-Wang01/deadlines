@@ -6,16 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Application Deadlines</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add this new style for the new container div */
+    #container {
+      width: 100%;
+      text-align: center;
+      /* This will center the text of the #headline */
+    }
+  </style>
 </head>
 
 <body>
 
-  <div id="timeline-container">
-    <div id="timeline"></div>
-    <!-- Timeline increments will be inserted here by your JavaScript -->
-  </div>
+  <div id="container"> <!-- New container div -->
+    <div id="headline">Graduate Programs Deadline 2023</div>
+    <div id="timeline-container">
+      <div id="timeline"></div>
+      <!-- Timeline increments will be inserted here by your JavaScript -->
+    </div>
+  </div> <!-- End of new container div -->
+
 
   <script src="script.js"></script>
 </body>
+
 
 </html>
