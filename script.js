@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     { date: '2024-03-15', program: 'UWM', color: 'cyan' },
     { date: '2024-01-16', program: 'DUKE', color: 'magenta' },
     { date: '2024-04-01', program: 'W PAUL G ALLEN SCHOOL', color: 'yellow' },
+    { date: '2024-01-01', program: 'WPI', color: 'blue' },
     // Add more deadlines here if needed
   ];
 
